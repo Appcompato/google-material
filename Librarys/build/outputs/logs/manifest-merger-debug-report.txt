@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:7:22-73
+application
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:9:5-20:19
+	android:supportsRtl
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:13:9-43
+	android:icon
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:11:9-38
+	android:allowBackup
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:10:9-35
+meta-data#com.google.android.gms.ads.AD_MANAGER_APP
+ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:16:9-18:36
+	android:value
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:18:13-33
+	android:name
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:17:13-69
+uses-sdk
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+		ADDED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+		INJECTED from E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml

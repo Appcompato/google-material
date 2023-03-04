@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="GPSAlertDialogTitle">Title</string>
+    <string name="GPSAlertDialogMessage">Msg</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">cancel</string>
+    <string name="dglwmgvasafgkng">Test_Application/</string>
+</resources>

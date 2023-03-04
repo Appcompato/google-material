@@ -1,0 +1,54 @@
+com.taskcombo.unirty.app-jetified-glide-4.14.1-0 C:\Users\hardik\.gradle\caches\transforms-3\0597521fe90ed84961873984a3b5e56a\transformed\jetified-glide-4.14.1\res
+com.taskcombo.unirty.app-recyclerview-1.1.0-1 C:\Users\hardik\.gradle\caches\transforms-3\05fc64770d90686c396731c12d8e72ef\transformed\recyclerview-1.1.0\res
+com.taskcombo.unirty.app-jetified-activity-1.5.1-2 C:\Users\hardik\.gradle\caches\transforms-3\067f5e90e53f035a280fb68fdc0a9265\transformed\jetified-activity-1.5.1\res
+com.taskcombo.unirty.app-cardview-1.0.0-3 C:\Users\hardik\.gradle\caches\transforms-3\134ef9aa8aa5c89ebf37cddd21d610e4\transformed\cardview-1.0.0\res
+com.taskcombo.unirty.app-jetified-pingtool-06bcfa7-4 C:\Users\hardik\.gradle\caches\transforms-3\176673e5c0104081c12becd33813ac04\transformed\jetified-pingtool-06bcfa7\res
+com.taskcombo.unirty.app-jetified-ucr-analytics-3.6.3-5 C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\res
+com.taskcombo.unirty.app-lifecycle-runtime-2.5.1-6 C:\Users\hardik\.gradle\caches\transforms-3\1ea907c5a7395f6c077c8e6b22e012e7\transformed\lifecycle-runtime-2.5.1\res
+com.taskcombo.unirty.app-core-1.8.0-7 C:\Users\hardik\.gradle\caches\transforms-3\227717b83cf4c857f92ea951aeb338ed\transformed\core-1.8.0\res
+com.taskcombo.unirty.app-media-1.0.0-8 C:\Users\hardik\.gradle\caches\transforms-3\228477626ed936400ed63690c7b76400\transformed\media-1.0.0\res
+com.taskcombo.unirty.app-jetified-core-ktx-1.8.0-9 C:\Users\hardik\.gradle\caches\transforms-3\2683873ed3f0912f5a0f6119e1414378\transformed\jetified-core-ktx-1.8.0\res
+com.taskcombo.unirty.app-jetified-lottie-5.2.0-10 C:\Users\hardik\.gradle\caches\transforms-3\2683d7aec2d3f6c37dd11f356ae75ba0\transformed\jetified-lottie-5.2.0\res
+com.taskcombo.unirty.app-browser-1.4.0-11 C:\Users\hardik\.gradle\caches\transforms-3\27540a57ab4f5659524e99550837ec2e\transformed\browser-1.4.0\res
+com.taskcombo.unirty.app-jetified-startup-runtime-1.1.1-12 C:\Users\hardik\.gradle\caches\transforms-3\371e80e821993af856bf74bfad143fe3\transformed\jetified-startup-runtime-1.1.1\res
+com.taskcombo.unirty.app-jetified-OneSignal-4.8.4-13 C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\res
+com.taskcombo.unirty.app-jetified-savedstate-1.2.0-14 C:\Users\hardik\.gradle\caches\transforms-3\435a04df1385777877adcf14c8759acb\transformed\jetified-savedstate-1.2.0\res
+com.taskcombo.unirty.app-jetified-sdp-android-1.1.0-15 C:\Users\hardik\.gradle\caches\transforms-3\452aa8cd8f0e243f272983609059bcde\transformed\jetified-sdp-android-1.1.0\res
+com.taskcombo.unirty.app-jetified-corevpn-06bcfa7-16 C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\res
+com.taskcombo.unirty.app-jetified-lifecycle-process-2.4.1-17 C:\Users\hardik\.gradle\caches\transforms-3\4a811d21f3cbbbc8a9c9db3b819f8335\transformed\jetified-lifecycle-process-2.4.1\res
+com.taskcombo.unirty.app-jetified-emoji2-views-helper-1.2.0-18 C:\Users\hardik\.gradle\caches\transforms-3\58c15d95976502e6036aa56fe229e06b\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.taskcombo.unirty.app-coordinatorlayout-1.1.0-19 C:\Users\hardik\.gradle\caches\transforms-3\61a1f00802c6b2266bbee4bab721082d\transformed\coordinatorlayout-1.1.0\res
+com.taskcombo.unirty.app-jetified-sdk-3.6.3-20 C:\Users\hardik\.gradle\caches\transforms-3\6cae0a43826edf941c6143537d046d81\transformed\jetified-sdk-3.6.3\res
+com.taskcombo.unirty.app-jetified-play-services-basement-18.0.0-21 C:\Users\hardik\.gradle\caches\transforms-3\6e9454f6c44ec280c1b0af1e5fba1af8\transformed\jetified-play-services-basement-18.0.0\res
+com.taskcombo.unirty.app-jetified-play-services-base-18.0.0-22 C:\Users\hardik\.gradle\caches\transforms-3\71097e9332d4c5d0f07dd6174fde4d5b\transformed\jetified-play-services-base-18.0.0\res
+com.taskcombo.unirty.app-jetified-appcompat-resources-1.5.1-23 C:\Users\hardik\.gradle\caches\transforms-3\71806494ff584dc46278c46afa265ba9\transformed\jetified-appcompat-resources-1.5.1\res
+com.taskcombo.unirty.app-transition-1.2.0-24 C:\Users\hardik\.gradle\caches\transforms-3\778e3f5da17d879d2d11eec93af0bd80\transformed\transition-1.2.0\res
+com.taskcombo.unirty.app-appcompat-1.5.1-25 C:\Users\hardik\.gradle\caches\transforms-3\89951d4aa8e020f230306208f7b75a6d\transformed\appcompat-1.5.1\res
+com.taskcombo.unirty.app-jetified-sdk-analytics-3.6.3-26 C:\Users\hardik\.gradle\caches\transforms-3\89e1d39c12882be56e9d937090bdea0f\transformed\jetified-sdk-analytics-3.6.3\res
+com.taskcombo.unirty.app-jetified-firebase-messaging-22.0.0-27 C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\res
+com.taskcombo.unirty.app-jetified-toolkit-1.5.7-28 C:\Users\hardik\.gradle\caches\transforms-3\950ea21a19b940417cd621b562e83428\transformed\jetified-toolkit-1.5.7\res
+com.taskcombo.unirty.app-jetified-annotation-experimental-1.1.0-29 C:\Users\hardik\.gradle\caches\transforms-3\980a9be6195537393b1fb1e83eea5fcc\transformed\jetified-annotation-experimental-1.1.0\res
+com.taskcombo.unirty.app-jetified-play-services-ads-21.2.0-30 C:\Users\hardik\.gradle\caches\transforms-3\a1af40c6d4e690b020d82ddabda96514\transformed\jetified-play-services-ads-21.2.0\res
+com.taskcombo.unirty.app-work-runtime-2.7.0-31 C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\res
+com.taskcombo.unirty.app-lifecycle-livedata-core-2.5.1-32 C:\Users\hardik\.gradle\caches\transforms-3\b6df3a2b97adecbd6044a11894c6d1f1\transformed\lifecycle-livedata-core-2.5.1\res
+com.taskcombo.unirty.app-jetified-play-services-ads-lite-21.2.0-33 C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\res
+com.taskcombo.unirty.app-fragment-1.3.6-34 C:\Users\hardik\.gradle\caches\transforms-3\bf65fbf364192931b0f2a49d593a7f75\transformed\fragment-1.3.6\res
+com.taskcombo.unirty.app-constraintlayout-2.1.4-35 C:\Users\hardik\.gradle\caches\transforms-3\c62f7aaf05952cc4953a69de173b6e7e\transformed\constraintlayout-2.1.4\res
+com.taskcombo.unirty.app-jetified-sdk-core-3.6.3-36 C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\res
+com.taskcombo.unirty.app-jetified-openvpn-3.4.17-37 C:\Users\hardik\.gradle\caches\transforms-3\d582e235d3cbcf399c85259499467272\transformed\jetified-openvpn-3.4.17\res
+com.taskcombo.unirty.app-jetified-viewpager2-1.0.0-38 C:\Users\hardik\.gradle\caches\transforms-3\db024951d0ed824f7d3bd0eb0e870c7e\transformed\jetified-viewpager2-1.0.0\res
+com.taskcombo.unirty.app-drawerlayout-1.1.1-39 C:\Users\hardik\.gradle\caches\transforms-3\dc36d1b46e0f2c40baaa09c4d117821a\transformed\drawerlayout-1.1.1\res
+com.taskcombo.unirty.app-material-1.7.0-40 C:\Users\hardik\.gradle\caches\transforms-3\ea625496b3b2f923927c36d3b510f94a\transformed\material-1.7.0\res
+com.taskcombo.unirty.app-jetified-emoji2-1.2.0-41 C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\res
+com.taskcombo.unirty.app-jetified-hydra-3.6.3-42 C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\res
+com.taskcombo.unirty.app-lifecycle-viewmodel-2.5.1-43 C:\Users\hardik\.gradle\caches\transforms-3\f97a9c65d692f78d67c941bc1d174717\transformed\lifecycle-viewmodel-2.5.1\res
+com.taskcombo.unirty.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-44 C:\Users\hardik\.gradle\caches\transforms-3\ff1eb03515ba540596b6af37b3852aee\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.taskcombo.unirty.app-packaged_res-45 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\packaged_res\debug
+com.taskcombo.unirty.app-pngs-46 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\generated\res\pngs\debug
+com.taskcombo.unirty.app-resValues-47 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\generated\res\resValues\debug
+com.taskcombo.unirty.app-rs-48 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\generated\res\rs\debug
+com.taskcombo.unirty.app-packageDebugResources-49 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.taskcombo.unirty.app-packageDebugResources-50 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.taskcombo.unirty.app-merged_res-51 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\build\intermediates\merged_res\debug
+com.taskcombo.unirty.app-debug-52 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\debug\res
+com.taskcombo.unirty.app-main-53 E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\res

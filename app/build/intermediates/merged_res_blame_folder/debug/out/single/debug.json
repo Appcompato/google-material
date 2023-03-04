@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/drawable_logo.png.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/drawable/logo.png"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_custome_interstitial.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/custome_interstitial.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_custome_native_layout.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/custome_native_layout.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/xml_backup_rules.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_banner_ad.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/banner_ad.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_native_ad.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/native_ad.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_custom_banner_layout.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/custom_banner_layout.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/layout_activity_m.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/layout/activity_m.xml"
+    },
+    {
+        "merged": "com.taskcombo.unirty.app-merged_res-51:/xml_data_extraction_rules.xml.flat",
+        "source": "com.taskcombo.unirty.app-main-53:/xml/data_extraction_rules.xml"
+    }
+]

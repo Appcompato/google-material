@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MasterApplication</string>
+    <string name="aemfvl679056" translatable="false">74563B38A303A696CDA213A714A5256EE5E2215CCCDB3321C3F3E48DA</string>
+    <string name="vl679056" translatable="false">213A7ECF52E6F7D7A474414A5256EE5E2215CC</string>
+    <string name="grdhtrfht">H3+l8dFMfnjwBztr2SYGgXfWrB3VsX8+4bymRQnOakFXVPkTOYoOTqz1tLOEepZj</string>
+    <string name="gsdflghrhesjdf" translatable="false">B38A303A696CDA216FCCDA2F</string>
+    <string name="error_msg1" translatable="false">LW17mQa78cTGESSjWOHx0u+bnqr9i4BIDIWwZ4KFA7X5MrPqFucP46X2Gytd/zDt</string>
+    <string name="akbshaemfvl679056" translatable="false">6C7909FFF74563B38A303A696CDA213A7ECF52E6F7D7A474414A5256EE5E2215CCCDB3321C3F3E48DAF2</string>
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="network_error">Network error…</string>
+    <string name="network_error_message">Internet is not available, reconnect network and try again.</string>
+    <string name="ok">OK</string>
+    <string name="do_you_realy_wan">Do you really want to Buy Premium Or Watch Video to Activate For One-time ?</string>
+    <string name="watchad">WatchAd</string>
+    <string name="buy_premium">Buy Premium</string>
+    <string name="pleasewait">"Please wait … "</string>
+    <string name="logindone">Login Done, Try Connecting VPN Now</string>
+    <string name="vpncon">Server Fetched</string>
+    <string name="errorconnecting">Error Connecting , Make Sure You have Selected A Country And Given Permission</string>
+    <string name="besserver">Best Server</string>
+    <string name="billunavaliable">BILLING UNAVAILABLE</string>
+    <string name="developererrer">DEVELOPER ERROR</string>
+    <string name="featurenotsupp">FEATURE NOT SUPPORTED</string>
+    <string name="alreadowned">ITEM ALREADY OWNED</string>
+    <string name="servicediss">SERVICE DISCONNECTED</string>
+    <string name="servicetime">SERVICE TIMEOUT</string>
+    <string name="itemunaval">ITEM UNAVAILABLE</string>
+
+</resources>

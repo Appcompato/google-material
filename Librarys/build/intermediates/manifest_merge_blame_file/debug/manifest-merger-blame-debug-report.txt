@@ -1,0 +1,41 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.taskcombo.dataz" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="32" />
+7-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:5:5-67
+9-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:5:22-64
+10    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+10-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:6:5-79
+10-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:6:22-76
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:7:5-76
+11-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:7:22-73
+12
+13    <application
+13-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:9:5-20:19
+14        android:allowBackup="true"
+14-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:10:9-35
+15        android:icon="@drawable/logo"
+15-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:11:9-38
+16        android:label="@string/app_name"
+16-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:12:9-41
+17        android:roundIcon="@drawable/logo"
+17-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:13:9-43
+18        android:supportsRtl="true" >
+18-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:14:9-35
+19        <meta-data
+19-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:16:9-18:36
+20            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+20-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:17:13-69
+21            android:value="true" />
+21-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\src\main\AndroidManifest.xml:18:13-33
+22    </application>
+23
+24</manifest>

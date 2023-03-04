@@ -1,0 +1,903 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.taskcombo.unirty"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-67
+11-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
+12-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+13-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-76
+13-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-73
+14    <permission
+14-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:7:5-9:47
+15        android:name="com.taskcombo.unirty.permission.C2D_MESSAGE"
+15-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:8:9-63
+16        android:protectionLevel="signature" />
+16-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:9:9-44
+17
+18    <uses-permission android:name="com.taskcombo.unirty.permission.C2D_MESSAGE" /> <!-- OneSignal SDK has runtime checks Android version. -->
+18-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:11:5-79
+18-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:11:22-76
+19    <!-- <uses-sdk tools:overrideLibrary="android.support.customtabs"/> -->
+20    <!-- Required runtime permission to display notifications on Android 13 -->
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+21-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:16:5-77
+21-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:16:22-74
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+22-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:18:5-82
+22-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:18:22-79
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:19:5-68
+23-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:19:22-65
+24    <!--
+25 Required so the device vibrates on receiving a push notification.
+26         Vibration settings of the device still apply.
+27    -->
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:24:5-66
+28-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:24:22-63
+29    <!--
+30 Use to restore notifications the user hasn't interacted with.
+31         They could be missed notifications if the user reboots their device if this isn't in place.
+32    -->
+33    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+33-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:30:5-81
+33-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:30:22-78
+34    <!-- Samsung -->
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+35-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:32:5-86
+35-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:32:22-83
+36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+36-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:33:5-87
+36-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:33:22-84
+37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+37-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:34:5-81
+37-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:34:22-78
+38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+38-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:35:5-83
+38-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:35:22-80
+39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+39-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:36:5-88
+39-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:36:22-85
+40    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+40-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:37:5-92
+40-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:37:22-89
+41    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+41-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:38:5-84
+41-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:38:22-81
+42    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+42-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:39:5-83
+42-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:39:22-80
+43    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+43-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:40:5-91
+43-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:40:22-88
+44    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+44-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:41:5-92
+44-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:41:22-89
+45    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+45-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:42:5-93
+45-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:42:22-90
+46    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+46-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:43:5-73
+46-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:43:22-70
+47    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+47-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:44:5-82
+47-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:44:22-79
+48    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+48-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:45:5-83
+48-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:45:22-80
+49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+49-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:46:5-88
+49-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:46:22-85
+50    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+50-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:47:5-89
+50-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:47:22-86
+51    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+51-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:13:5-77
+51-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:13:22-74
+52
+53    <queries>
+53-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:11:5-13:15
+54        <package android:name="com.facebook.katana" />
+54-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:12:9-55
+54-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:12:18-52
+55        <!-- For browser content -->
+56        <intent>
+56-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:31:9-37:18
+57            <action android:name="android.intent.action.VIEW" />
+57-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:77:17-69
+57-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:77:25-66
+58
+59            <category android:name="android.intent.category.BROWSABLE" />
+59-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:34:13-74
+59-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:34:23-71
+60
+61            <data android:scheme="https" />
+61-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:36:13-44
+61-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:36:19-41
+62        </intent> <!-- End of browser content -->
+63        <!-- For CustomTabsService -->
+64        <intent>
+64-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:40:9-42:18
+65            <action android:name="android.support.customtabs.action.CustomTabsService" />
+65-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:41:13-90
+65-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:41:21-87
+66        </intent>
+67    </queries>
+68
+69    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+69-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:17:5-79
+69-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:17:22-76
+70
+71    <application
+71-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:6:5-27:19
+72        android:name="com.taskcombo.unirty.MyApplicationclass"
+72-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:7:9-43
+73        android:allowBackup="true"
+73-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:8:9-35
+74        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+74-->[androidx.core:core:1.8.0] C:\Users\hardik\.gradle\caches\transforms-3\227717b83cf4c857f92ea951aeb338ed\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+75        android:dataExtractionRules="@xml/data_extraction_rules"
+75-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:9:9-65
+76        android:debuggable="true"
+77        android:fullBackupContent="@xml/backup_rules"
+77-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:10:9-54
+78        android:icon="@drawable/logo"
+78-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:11:9-38
+79        android:label="@string/app_name"
+79-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:12:9-41
+80        android:networkSecurityConfig="@xml/sdk_captive_portal_network_security"
+80-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:16:9-81
+81        android:roundIcon="@drawable/logo"
+81-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:13:9-43
+82        android:supportsRtl="true"
+82-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:14:9-35
+83        android:testOnly="true"
+84        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+84-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:15:9-65
+85        <activity
+85-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:18:9-26:20
+86            android:name="com.taskcombo.unirty.MActivity"
+86-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:19:13-38
+87            android:exported="true" >
+87-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:20:13-36
+88            <intent-filter>
+88-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:21:13-25:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:22:17-69
+89-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:22:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:24:17-77
+91-->E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\app\src\main\AndroidManifest.xml:24:27-74
+92            </intent-filter>
+93        </activity>
+94
+95        <meta-data
+95-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:36
+96            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+96-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-69
+97            android:value="true" />
+97-->[:Librarys] E:\projects for work\rushi friends projects\harry\imp\Final_Master_Project\Master_Project\Librarys\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-33
+98
+99        <receiver
+99-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:50:9-61:20
+100            android:name="com.onesignal.FCMBroadcastReceiver"
+100-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:51:13-62
+101            android:exported="true"
+101-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:52:13-36
+102            android:permission="com.google.android.c2dm.permission.SEND" >
+102-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:53:13-73
+103
+104            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+105            <intent-filter android:priority="999" >
+105-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:56:13-60:29
+105-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:56:28-50
+106                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+106-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:57:17-81
+106-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:57:25-78
+107
+108                <category android:name="com.taskcombo.unirty" />
+108-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:59:17-61
+108-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:59:27-58
+109            </intent-filter>
+110        </receiver>
+111
+112        <service
+112-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:63:9-69:19
+113            android:name="com.onesignal.HmsMessageServiceOneSignal"
+113-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:64:13-68
+114            android:exported="false" >
+114-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:65:13-37
+115            <intent-filter>
+115-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:66:13-68:29
+116                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+116-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:67:17-81
+116-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:67:25-78
+117            </intent-filter>
+118        </service>
+119
+120        <activity
+120-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:71:9-79:20
+121            android:name="com.onesignal.NotificationOpenedActivityHMS"
+121-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:72:13-71
+122            android:exported="true"
+122-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:73:13-36
+123            android:noHistory="true"
+123-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:74:13-37
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+124-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:75:13-72
+125            <intent-filter>
+125-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:76:13-78:29
+126                <action android:name="android.intent.action.VIEW" />
+126-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:77:17-69
+126-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:77:25-66
+127            </intent-filter>
+128        </activity>
+129
+130        <service
+130-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:81:9-83:40
+131            android:name="com.onesignal.FCMIntentService"
+131-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:82:13-58
+132            android:exported="false" />
+132-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:83:13-37
+133        <service
+133-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:84:9-87:72
+134            android:name="com.onesignal.FCMIntentJobService"
+134-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:85:13-61
+135            android:exported="false"
+135-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:86:13-37
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:87:13-69
+137        <service
+137-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:88:9-91:43
+138            android:name="com.onesignal.SyncService"
+138-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:89:13-53
+139            android:exported="false"
+139-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:90:13-37
+140            android:stopWithTask="true" />
+140-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:91:13-40
+141        <service
+141-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:92:9-95:72
+142            android:name="com.onesignal.SyncJobService"
+142-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:93:13-56
+143            android:exported="false"
+143-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:94:13-37
+144            android:permission="android.permission.BIND_JOB_SERVICE" />
+144-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:95:13-69
+145
+146        <activity
+146-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:97:9-100:75
+147            android:name="com.onesignal.PermissionsActivity"
+147-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:98:13-61
+148            android:exported="false"
+148-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:99:13-37
+149            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+149-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:100:13-72
+150
+151        <receiver
+151-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:102:9-104:39
+152            android:name="com.onesignal.NotificationDismissReceiver"
+152-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:103:13-69
+153            android:exported="true" />
+153-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:104:13-36
+154        <receiver
+154-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:105:9-112:20
+155            android:name="com.onesignal.BootUpReceiver"
+155-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:106:13-56
+156            android:exported="true" >
+156-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:107:13-36
+157            <intent-filter>
+157-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:108:13-111:29
+158                <action android:name="android.intent.action.BOOT_COMPLETED" />
+158-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:109:17-79
+158-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:109:25-76
+159                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+159-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:110:17-82
+159-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:110:25-79
+160            </intent-filter>
+161        </receiver>
+162        <receiver
+162-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:113:9-119:20
+163            android:name="com.onesignal.UpgradeReceiver"
+163-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:114:13-57
+164            android:exported="true" >
+164-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:115:13-36
+165            <intent-filter>
+165-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:116:13-118:29
+166                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+166-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:117:17-84
+166-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:117:25-81
+167            </intent-filter>
+168        </receiver>
+169
+170        <activity
+170-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:121:9-127:75
+171            android:name="com.onesignal.NotificationOpenedReceiver"
+171-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:122:13-68
+172            android:excludeFromRecents="true"
+172-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:123:13-46
+173            android:exported="true"
+173-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:124:13-36
+174            android:noHistory="true"
+174-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:125:13-37
+175            android:taskAffinity=""
+175-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:126:13-36
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:127:13-72
+177        <activity
+177-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:128:9-133:75
+178            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+178-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:129:13-85
+179            android:excludeFromRecents="true"
+179-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:130:13-46
+180            android:exported="true"
+180-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:131:13-36
+181            android:noHistory="true"
+181-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:132:13-37
+182            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+182-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:133:13-72
+183
+184        <meta-data
+184-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.4.17] C:\Users\hardik\.gradle\caches\transforms-3\d582e235d3cbcf399c85259499467272\transformed\jetified-openvpn-3.4.17\AndroidManifest.xml:12:9-14:58
+185            android:name="com.anchorfree.vpnsdk.vpn_config.openvpn"
+185-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.4.17] C:\Users\hardik\.gradle\caches\transforms-3\d582e235d3cbcf399c85259499467272\transformed\jetified-openvpn-3.4.17\AndroidManifest.xml:13:13-68
+186            android:resource="@raw/openvpn_vpn_config" />
+186-->[com.github.AnchorFreePartner.hydra-sdk-android:openvpn:3.4.17] C:\Users\hardik\.gradle\caches\transforms-3\d582e235d3cbcf399c85259499467272\transformed\jetified-openvpn-3.4.17\AndroidManifest.xml:14:13-55
+187        <meta-data
+187-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\6cae0a43826edf941c6143537d046d81\transformed\jetified-sdk-3.6.3\AndroidManifest.xml:10:9-12:63
+188            android:name="com.anchorfree.sdk.transports"
+188-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\6cae0a43826edf941c6143537d046d81\transformed\jetified-sdk-3.6.3\AndroidManifest.xml:11:13-57
+189            android:resource="@raw/hydra_transports_config" />
+189-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\6cae0a43826edf941c6143537d046d81\transformed\jetified-sdk-3.6.3\AndroidManifest.xml:12:13-60
+190        <meta-data
+190-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:10:9-12:56
+191            android:name="com.anchorfree.vpnsdk.vpn_config.hydra"
+191-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:11:13-66
+192            android:resource="@raw/hydra_vpn_config" />
+192-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:12:13-53
+193
+194        <provider
+194-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:14:9-18:37
+195            android:name="com.anchorfree.sdk.HydraTransportInitProvider"
+195-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:15:13-73
+196            android:authorities="com.taskcombo.unirty.sdk.transport.hydra"
+196-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:16:13-71
+197            android:exported="false"
+197-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:17:13-37
+198            android:initOrder="1" />
+198-->[com.github.AnchorFreePartner.hydra-sdk-android:hydra:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\f7cf23cc1ccd783b35d2510aaeee2268\transformed\jetified-hydra-3.6.3\AndroidManifest.xml:18:13-34
+199        <provider
+199-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:18:9-22:37
+200            android:name="com.anchorfree.sdk.DBProvider"
+200-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:19:13-57
+201            android:authorities="com.taskcombo.unirty.hydra.sdk.db.provider"
+201-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:20:13-73
+202            android:exported="false"
+202-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:21:13-37
+203            android:initOrder="1" />
+203-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:22:13-34
+204
+205        <meta-data
+205-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:24:9-26:55
+206            android:name="com.anchorfree.vpnsdk.vpn_config"
+206-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:25:13-60
+207            android:resource="@raw/core_vpn_config" />
+207-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:26:13-52
+208
+209        <provider
+209-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:28:9-32:39
+210            android:name="com.anchorfree.sdk.UnifiedSDKInitProviderMain"
+210-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:29:13-73
+211            android:authorities="com.taskcombo.unirty.anchorfree.sdk.init.provider"
+211-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:30:13-80
+212            android:exported="false"
+212-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:31:13-37
+213            android:initOrder="100" />
+213-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:32:13-36
+214        <provider
+214-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:33:9-38:58
+215            android:name="com.anchorfree.sdk.UnifiedSDKInitProviderVpn"
+215-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:34:13-72
+216            android:authorities="com.taskcombo.unirty.anchorfree.sdk.init.provider.vpn"
+216-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:35:13-84
+217            android:exported="false"
+217-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:36:13-37
+218            android:initOrder="100"
+218-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:37:13-36
+219            android:process="@string/vpn_process_name" />
+219-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-core:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\cdf50977a9197bbcfc40692f88a6ca59\transformed\jetified-sdk-core-3.6.3\AndroidManifest.xml:38:13-55
+220
+221        <service
+221-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\c841528f1c432be1aaeb39e778d621e7\transformed\jetified-hydratransport-06bcfa7\AndroidManifest.xml:10:9-13:19
+222            android:name="com.anchorfree.vpnsdk.transporthydra.proxyservice.HydraProxyService"
+222-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\c841528f1c432be1aaeb39e778d621e7\transformed\jetified-hydratransport-06bcfa7\AndroidManifest.xml:11:13-95
+223            android:permission="android.permission.BIND_VPN_SERVICE" >
+223-->[com.github.AnchorFree.hydra-vpn-android:hydratransport:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\c841528f1c432be1aaeb39e778d621e7\transformed\jetified-hydratransport-06bcfa7\AndroidManifest.xml:12:13-69
+224        </service>
+225        <service
+225-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\710d7c3125c6c119a9a9b08394995331\transformed\jetified-sdk-notifications-3.6.3\AndroidManifest.xml:10:9-13:58
+226            android:name="com.anchorfree.sdk.SdkNotificationService"
+226-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\710d7c3125c6c119a9a9b08394995331\transformed\jetified-sdk-notifications-3.6.3\AndroidManifest.xml:11:13-69
+227            android:exported="false"
+227-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\710d7c3125c6c119a9a9b08394995331\transformed\jetified-sdk-notifications-3.6.3\AndroidManifest.xml:12:13-37
+228            android:process="@string/vpn_process_name" />
+228-->[com.github.AnchorFreePartner.hydra-sdk-android:sdk-notifications:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\710d7c3125c6c119a9a9b08394995331\transformed\jetified-sdk-notifications-3.6.3\AndroidManifest.xml:13:13-55
+229
+230        <provider
+230-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:13:9-19:20
+231            android:name="com.anchorfree.ucr.UCRContentProvider"
+231-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:14:13-65
+232            android:authorities="com.taskcombo.unirty.ucr.provider"
+232-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:15:13-64
+233            android:enabled="true"
+233-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:16:13-35
+234            android:exported="false"
+234-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:17:13-37
+235            android:multiprocess="false" >
+235-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:18:13-41
+236        </provider>
+237
+238        <service
+238-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:21:9-25:19
+239            android:name="com.anchorfree.ucr.UCRService"
+239-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:22:13-57
+240            android:enabled="true"
+240-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:23:13-35
+241            android:exported="false" >
+241-->[com.github.AnchorFreePartner.hydra-sdk-android:ucr-analytics:3.6.3] C:\Users\hardik\.gradle\caches\transforms-3\19d36be82e266a44d9295f91fb17953e\transformed\jetified-ucr-analytics-3.6.3\AndroidManifest.xml:24:13-37
+242        </service>
+243
+244        <activity
+244-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:14:9-20:75
+245            android:name="com.anchorfree.vpnsdk.vpnservice.StartVPNServiceShadowActivity"
+245-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:15:13-90
+246            android:exported="false"
+246-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:16:13-37
+247            android:label="@string/app_name"
+247-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:17:13-45
+248            android:launchMode="singleTask"
+248-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:18:13-44
+249            android:process="@string/vpn_process_name"
+249-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:19:13-55
+250            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+250-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:20:13-72
+251
+252        <provider
+252-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:22:9-25:40
+253            android:name="com.anchorfree.vpnsdk.vpnservice.config.VpnConfigProvider"
+253-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:23:13-85
+254            android:authorities="com.taskcombo.unirty.vpn_config"
+254-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:24:13-62
+255            android:exported="false" />
+255-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:25:13-37
+256        <provider
+256-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:26:9-29:40
+257            android:name="com.anchorfree.vpnsdk.vpnservice.credentials.CredentialsContentProvider"
+257-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:27:13-99
+258            android:authorities="com.taskcombo.unirty.credentials"
+258-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:28:13-63
+259            android:exported="false" />
+259-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:29:13-37
+260
+261        <service
+261-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:31:9-40:19
+262            android:name="com.anchorfree.vpnsdk.vpnservice.AFVpnService"
+262-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:32:13-73
+263            android:enabled="@bool/vpn_process_enabled"
+263-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:33:13-56
+264            android:exported="false"
+264-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:34:13-37
+265            android:permission="android.permission.BIND_VPN_SERVICE"
+265-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:35:13-69
+266            android:process="@string/vpn_process_name" >
+266-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:36:13-55
+267            <intent-filter>
+267-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:37:13-39:29
+268                <action android:name="android.net.VpnService" />
+268-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:38:17-65
+268-->[com.github.AnchorFree.hydra-vpn-android:corevpn:06bcfa7] C:\Users\hardik\.gradle\caches\transforms-3\47d4623def80c21ef0ba35bf58af0433\transformed\jetified-corevpn-06bcfa7\AndroidManifest.xml:38:25-62
+269            </intent-filter>
+270        </service>
+271
+272        <activity
+272-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:20:9-24:75
+273            android:name="com.facebook.ads.AudienceNetworkActivity"
+273-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:21:13-68
+274            android:configChanges="keyboardHidden|orientation|screenSize"
+274-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:22:13-74
+275            android:exported="false"
+275-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:23:13-37
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+276-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:24:13-72
+277
+278        <provider
+278-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:26:9-29:40
+279            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+279-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:27:13-75
+280            android:authorities="com.taskcombo.unirty.AudienceNetworkContentProvider"
+280-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:28:13-82
+281            android:exported="false" />
+281-->[com.facebook.android:audience-network-sdk:6.12.0] C:\Users\hardik\.gradle\caches\transforms-3\1ce1598d2f4d212e61af8273e5bbc5db\transformed\jetified-audience-network-sdk-6.12.0\AndroidManifest.xml:29:13-37
+282
+283        <receiver
+283-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+284            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+284-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+285            android:exported="true"
+285-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+286            android:permission="com.google.android.c2dm.permission.SEND" >
+286-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+287            <intent-filter>
+287-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:32:13-34:29
+288                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+288-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:57:17-81
+288-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:57:25-78
+289            </intent-filter>
+290        </receiver>
+291        <!--
+292             FirebaseMessagingService performs security checks at runtime,
+293             but set to not exported to explicitly avoid allowing another app to call it.
+294        -->
+295        <service
+295-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+296            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+296-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+297            android:directBootAware="true"
+297-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+298            android:exported="false" >
+298-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+299            <intent-filter android:priority="-500" >
+299-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:13-47:29
+299-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:45:28-51
+300                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+300-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:17-78
+300-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:46:25-75
+301            </intent-filter>
+302        </service>
+303        <service
+303-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+304            android:name="com.google.firebase.components.ComponentDiscoveryService"
+304-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:50:13-84
+305            android:directBootAware="true"
+305-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+306            android:exported="false" >
+306-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+307            <meta-data
+307-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+308                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+308-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\hardik\.gradle\caches\transforms-3\92f21639d0bee7ef1c1175c66e92ffe6\transformed\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+310            <meta-data
+310-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\9dfd137daee656d6305c95b9b6c03e02\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+311                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+311-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\9dfd137daee656d6305c95b9b6c03e02\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+312                android:value="com.google.firebase.components.ComponentRegistrar" />
+312-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\9dfd137daee656d6305c95b9b6c03e02\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+313            <meta-data
+313-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hardik\.gradle\caches\transforms-3\aee05cdd55e07308022031d9e8d07441\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+314                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+314-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hardik\.gradle\caches\transforms-3\aee05cdd55e07308022031d9e8d07441\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+315                android:value="com.google.firebase.components.ComponentRegistrar" />
+315-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\hardik\.gradle\caches\transforms-3\aee05cdd55e07308022031d9e8d07441\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+316        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+317        <activity
+317-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:49:9-53:64
+318            android:name="com.google.android.gms.ads.AdActivity"
+318-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:50:13-65
+319            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+319-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:51:13-122
+320            android:exported="false"
+320-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:52:13-37
+321            android:theme="@android:style/Theme.Translucent" />
+321-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:53:13-61
+322
+323        <provider
+323-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:55:9-59:39
+324            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+324-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:56:13-76
+325            android:authorities="com.taskcombo.unirty.mobileadsinitprovider"
+325-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:57:13-73
+326            android:exported="false"
+326-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:58:13-37
+327            android:initOrder="100" />
+327-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:59:13-36
+328
+329        <service
+329-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:61:9-64:40
+330            android:name="com.google.android.gms.ads.AdService"
+330-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:62:13-64
+331            android:enabled="true"
+331-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:63:13-35
+332            android:exported="false" />
+332-->[com.google.android.gms:play-services-ads-lite:21.2.0] C:\Users\hardik\.gradle\caches\transforms-3\bb3709fbdf9134e84f2d5ab1573467b7\transformed\jetified-play-services-ads-lite-21.2.0\AndroidManifest.xml:64:13-37
+333
+334        <provider
+334-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+335            android:name="com.google.firebase.provider.FirebaseInitProvider"
+335-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+336            android:authorities="com.taskcombo.unirty.firebaseinitprovider"
+336-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+337            android:directBootAware="true"
+337-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+338            android:exported="false"
+338-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+339            android:initOrder="100" />
+339-->[com.google.firebase:firebase-common:20.0.0] C:\Users\hardik\.gradle\caches\transforms-3\2cab8fea02665dd34299140bc8177b74\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+340
+341        <activity
+341-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\71097e9332d4c5d0f07dd6174fde4d5b\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:9-22:45
+342            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+342-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\71097e9332d4c5d0f07dd6174fde4d5b\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:19-85
+343            android:exported="false"
+343-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\71097e9332d4c5d0f07dd6174fde4d5b\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:22:19-43
+344            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+344-->[com.google.android.gms:play-services-base:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\71097e9332d4c5d0f07dd6174fde4d5b\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:21:19-78
+345
+346        <meta-data
+346-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\6e9454f6c44ec280c1b0af1e5fba1af8\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+347            android:name="com.google.android.gms.version"
+347-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\6e9454f6c44ec280c1b0af1e5fba1af8\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+348            android:value="@integer/google_play_services_version" />
+348-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hardik\.gradle\caches\transforms-3\6e9454f6c44ec280c1b0af1e5fba1af8\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+349
+350        <provider
+350-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+351            android:name="androidx.startup.InitializationProvider"
+351-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+352            android:authorities="com.taskcombo.unirty.androidx-startup"
+352-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+353            android:exported="false" >
+353-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+354            <meta-data
+354-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+355                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+355-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+356                android:value="androidx.startup" />
+356-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hardik\.gradle\caches\transforms-3\ea932046fa927511e4b3c6fc80ba1b30\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+357            <meta-data
+357-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+358                android:name="androidx.work.WorkManagerInitializer"
+358-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+359                android:value="androidx.startup" />
+359-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+360            <meta-data
+360-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hardik\.gradle\caches\transforms-3\4a811d21f3cbbbc8a9c9db3b819f8335\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+361                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+361-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hardik\.gradle\caches\transforms-3\4a811d21f3cbbbc8a9c9db3b819f8335\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+362                android:value="androidx.startup" />
+362-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hardik\.gradle\caches\transforms-3\4a811d21f3cbbbc8a9c9db3b819f8335\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+363        </provider>
+364
+365        <service
+365-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+366            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+366-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+367            android:directBootAware="false"
+367-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+368            android:enabled="@bool/enable_system_alarm_service_default"
+368-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+369            android:exported="false" />
+369-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+370        <service
+370-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+371            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+371-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+372            android:directBootAware="false"
+372-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+373            android:enabled="@bool/enable_system_job_service_default"
+373-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+374            android:exported="true"
+374-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+375            android:permission="android.permission.BIND_JOB_SERVICE" />
+375-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+376        <service
+376-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+377            android:name="androidx.work.impl.foreground.SystemForegroundService"
+377-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+378            android:directBootAware="false"
+378-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+379            android:enabled="@bool/enable_system_foreground_service_default"
+379-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+380            android:exported="false" />
+380-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+381
+382        <receiver
+382-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+383            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+383-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+384            android:directBootAware="false"
+384-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+385            android:enabled="true"
+385-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+386            android:exported="false" />
+386-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+387        <receiver
+387-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+388            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+388-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+389            android:directBootAware="false"
+389-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+390            android:enabled="false"
+390-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+391            android:exported="false" >
+391-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+392            <intent-filter>
+392-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+393                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+393-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+393-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+394                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+394-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+394-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+395            </intent-filter>
+396        </receiver>
+397        <receiver
+397-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+398            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+398-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+399            android:directBootAware="false"
+399-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+400            android:enabled="false"
+400-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+401            android:exported="false" >
+401-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+402            <intent-filter>
+402-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+403                <action android:name="android.intent.action.BATTERY_OKAY" />
+403-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+403-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+404                <action android:name="android.intent.action.BATTERY_LOW" />
+404-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+404-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+405            </intent-filter>
+406        </receiver>
+407        <receiver
+407-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+408            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+408-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+409            android:directBootAware="false"
+409-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+410            android:enabled="false"
+410-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+411            android:exported="false" >
+411-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+412            <intent-filter>
+412-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+413                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+413-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+413-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+414                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+414-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+414-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+415            </intent-filter>
+416        </receiver>
+417        <receiver
+417-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+418            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+418-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+419            android:directBootAware="false"
+419-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+420            android:enabled="false"
+420-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+421            android:exported="false" >
+421-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+422            <intent-filter>
+422-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+423                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+423-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+423-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+424            </intent-filter>
+425        </receiver>
+426        <receiver
+426-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+427            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+427-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+428            android:directBootAware="false"
+428-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+429            android:enabled="false"
+429-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+430            android:exported="false" >
+430-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+431            <intent-filter>
+431-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+432                <action android:name="android.intent.action.BOOT_COMPLETED" />
+432-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:109:17-79
+432-->[com.onesignal:OneSignal:4.8.4] C:\Users\hardik\.gradle\caches\transforms-3\3f9a081faa326f1d929389a8c428627a\transformed\jetified-OneSignal-4.8.4\AndroidManifest.xml:109:25-76
+433                <action android:name="android.intent.action.TIME_SET" />
+433-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+433-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+434                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+434-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+434-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+435            </intent-filter>
+436        </receiver>
+437        <receiver
+437-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+438            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+438-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+439            android:directBootAware="false"
+439-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+440            android:enabled="@bool/enable_system_alarm_service_default"
+440-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+441            android:exported="false" >
+441-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+442            <intent-filter>
+442-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+443                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+443-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+443-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+444            </intent-filter>
+445        </receiver>
+446        <receiver
+446-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+447            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+447-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+448            android:directBootAware="false"
+448-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+449            android:enabled="true"
+449-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+450            android:exported="true"
+450-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+451            android:permission="android.permission.DUMP" >
+451-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+452            <intent-filter>
+452-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+453                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+453-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+453-->[androidx.work:work-runtime:2.7.0] C:\Users\hardik\.gradle\caches\transforms-3\af2c2740368c929542d8b655a1e8e6c7\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+454            </intent-filter>
+455        </receiver>
+456
+457        <service
+457-->[androidx.room:room-runtime:2.2.5] C:\Users\hardik\.gradle\caches\transforms-3\4cd56f83ec3e12adb443ed68002890da\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+458            android:name="androidx.room.MultiInstanceInvalidationService"
+458-->[androidx.room:room-runtime:2.2.5] C:\Users\hardik\.gradle\caches\transforms-3\4cd56f83ec3e12adb443ed68002890da\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+459            android:directBootAware="true"
+459-->[androidx.room:room-runtime:2.2.5] C:\Users\hardik\.gradle\caches\transforms-3\4cd56f83ec3e12adb443ed68002890da\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+460            android:exported="false" />
+460-->[androidx.room:room-runtime:2.2.5] C:\Users\hardik\.gradle\caches\transforms-3\4cd56f83ec3e12adb443ed68002890da\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+461        <service
+461-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+462            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+462-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+463            android:exported="false" >
+463-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+464            <meta-data
+464-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+465                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+465-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+466                android:value="cct" />
+466-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\8e0ae4c17e4053840b31a996e62007da\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+467        </service>
+468        <service
+468-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+469            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+469-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+470            android:exported="false"
+470-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+471            android:permission="android.permission.BIND_JOB_SERVICE" >
+471-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+472        </service>
+473
+474        <receiver
+474-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+475            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+475-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+476            android:exported="false" />
+476-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hardik\.gradle\caches\transforms-3\cbfba3d862e2c05bf38a656defe94f81\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+477    </application>
+478
+479</manifest>
